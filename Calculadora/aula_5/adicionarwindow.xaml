@@ -1,0 +1,21 @@
+﻿<Window x:Class="aula_5.adicionarwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:aula_5"
+        mc:Ignorable="d"
+        Title="adicionarwindow" Height="450" Width="800">
+    <Grid>
+        <GroupBox HorizontalAlignment="Left" Height="183" Header="Figura" Margin="161,102,0,0" VerticalAlignment="Top" Width="212">
+            <StackPanel Height="NaN" Margin="0,10,10,0" Width="NaN">
+                <RadioButton x:Name="RBQuadrado" Content="Quadrado" d:LayoutOverrides="Width, Height"/>
+                <RadioButton x:Name="RBRetangulo" Content="Retangulo" d:LayoutOverrides="Width, Height"/>
+                <RadioButton x:Name="RBcirculo" Content="Circulo" d:LayoutOverrides="Width, Height"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btinserir" Content="Inserir" HorizontalAlignment="Left" Margin="424,340,0,0" VerticalAlignment="Top" Click="btInserir_click"/>
+        <Label Content="Largura:&#xD;&#xA;" HorizontalAlignment="Left" Margin="428,142,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

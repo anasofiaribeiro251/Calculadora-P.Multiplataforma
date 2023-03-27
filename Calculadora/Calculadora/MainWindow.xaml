@@ -1,0 +1,21 @@
+﻿<Window x:Class="calculadora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculadora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="valor1" Content="Valor 1:" HorizontalAlignment="Left" Height="34" Margin="65,91,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="valor2" Content="Valor 2:" HorizontalAlignment="Left" Height="28" Margin="65,180,0,0" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="operacao" Content="Operação:" HorizontalAlignment="Left" Height="35" Margin="65,130,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Height="38" Margin="148,230,0,0" VerticalAlignment="Top" Width="192" Click="calcular_Click"/>
+        <Label x:Name="resultado" Content="Resultado" HorizontalAlignment="Left" Height="23" Margin="65,296,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="TextValor1" HorizontalAlignment="Left" Height="25" Margin="148,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" TextChanged="TextValor1_TextChanged"/>
+        <TextBox x:Name="TextResultado" HorizontalAlignment="Left" Height="25" Margin="148,294,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="TextValor2" HorizontalAlignment="Left" Height="25" Margin="148,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="TextOperacao" HorizontalAlignment="Left" Height="25" Margin="148,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" TextChanged="TextValor1_TextChanged"/>
+
+    </Grid>
+</Window>
